@@ -18,4 +18,10 @@ form.addEventListener("submit", function (e) {
     var horas = document.getElementById("horas").value;
     var motivo = document.getElementById("motivo").value;
     var termo = document.getElementById("termo").checked;
+
+    if (nome.length < 3) {
+        alert("Nome inválido");
+        return;
+    }
+
 }
