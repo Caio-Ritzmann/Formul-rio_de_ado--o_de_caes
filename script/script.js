@@ -14,5 +14,8 @@ form.addEventListener("submit", function (e) {
     var cidade = document.getElementById("cidade").value;
     var moradia = document.getElementById("moradia").value;
     var quintal = document.getElementById("quintal").value;
-    
+    var pet = document.getElementById("pet").value;
+    var horas = document.getElementById("horas").value;
+    var motivo = document.getElementById("motivo").value;
+    var termo = document.getElementById("termo").checked;
 }
