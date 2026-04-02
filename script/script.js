@@ -24,4 +24,10 @@ form.addEventListener("submit", function (e) {
         return;
     }
 
+     if (email.indexOf("@") == -1) {
+        alert("Email inválido");
+        return;
+    }
+
+
 }
