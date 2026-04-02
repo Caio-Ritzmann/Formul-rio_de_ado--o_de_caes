@@ -24,10 +24,13 @@ form.addEventListener("submit", function (e) {
         return;
     }
 
-     if (email.indexOf("@") == -1) {
+    if (email.indexOf("@") == -1) {
         alert("Email inválido");
         return;
     }
 
-
+    if (telefone.length < 8) {
+        alert("Telefone inválido");
+        return;
+    }
 }
