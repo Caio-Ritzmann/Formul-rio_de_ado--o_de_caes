@@ -31,3 +31,15 @@ input, select, textarea {
     border-radius: 6px;
     box-sizing: border-box;
 }
+
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
