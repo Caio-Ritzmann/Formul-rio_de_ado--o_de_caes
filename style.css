@@ -10,3 +10,15 @@ body {
 
 }
 
+h1 {
+    text-align: center;
+    color: #000000;
+    margin-top: 30px;
+}
+
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
