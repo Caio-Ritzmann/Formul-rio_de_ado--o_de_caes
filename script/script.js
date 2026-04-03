@@ -78,9 +78,19 @@ form.addEventListener("submit", function (e)) {
         alert("Motivo muito curto");
         return;
     }
-    
+
     if (termo == false) {
         alert("Aceite o termo");
         return;
     }
+
+    if (moradia == "apartamento" && quintal == "sim") {
+        alert("Apartamento não tem quintal");
+        return;
+    }
+    
+
+
+
+
 }
