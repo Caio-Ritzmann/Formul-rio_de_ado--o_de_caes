@@ -59,7 +59,7 @@ form.addEventListener("submit", function (e)) {
         return;
     }
 
-     if (quintal == "") {
+    if (quintal == "") {
         alert("Informe o quintal");
         return;
     }
@@ -69,10 +69,14 @@ form.addEventListener("submit", function (e)) {
         return;
     }
 
-      if (horas == "" || isNaN(horas)) {
+    if (horas == "" || isNaN(horas)) {
         alert("Horas inválidas");
         return;
     }
-
     
+    if (motivo.length < 10) {
+        alert("Motivo muito curto");
+        return;
+    }
+
 }
