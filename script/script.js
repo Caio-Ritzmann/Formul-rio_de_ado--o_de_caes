@@ -34,7 +34,7 @@ form.addEventListener("submit", function (e)) {
         return;
     }
 
-     if (cpf == "") {
+    if (cpf == "") {
         alert("CPF obrigatório");
         return;
     }
@@ -43,4 +43,10 @@ form.addEventListener("submit", function (e)) {
         alert("CPF já existe");
         return;
     }
+
+    if (idade < 18) {
+        alert("Precisa ser maior de idade");
+        return;
+    }
+
 }
