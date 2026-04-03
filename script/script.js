@@ -88,9 +88,14 @@ form.addEventListener("submit", function (e)) {
         alert("Apartamento não tem quintal");
         return;
     }
-    
 
+    if (horas > 8) {
+        alert("Animal ficará muito tempo sozinho");
+    }
 
+    if (pet == "nao") {
+        alert("A ONG poderá acompanhar você");
+    }
 
 
 }
