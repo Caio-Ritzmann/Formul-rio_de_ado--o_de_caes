@@ -1,6 +1,6 @@
 var form = document.getElementById("form");
 
-var cpfs = ["123", "456"]; // exemplo
+var cpfs = ["123", "456"];
 
 form.addEventListener("submit", function (e) {
 
