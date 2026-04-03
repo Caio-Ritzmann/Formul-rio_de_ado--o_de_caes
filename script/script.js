@@ -49,4 +49,23 @@ form.addEventListener("submit", function (e)) {
         return;
     }
 
+    if (cidade == "") {
+        alert("Cidade obrigatória");
+        return;
+    }
+
+    if (moradia == "") {
+        alert("Escolha a moradia");
+        return;
+    }
+
+     if (quintal == "") {
+        alert("Informe o quintal");
+        return;
+    }
+
+    if (pet == "") {
+        alert("Informe se já teve pet");
+        return;
+    }
 }
