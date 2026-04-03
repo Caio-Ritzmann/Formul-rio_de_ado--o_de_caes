@@ -2,7 +2,7 @@ var form = document.getElementById("form");
 
 var cpfs = ["123", "456"]; // exemplo
 
-form.addEventListener("submit", function (e)) {
+form.addEventListener("submit", function (e) {
 
     e.preventDefault();
 
@@ -96,6 +96,14 @@ form.addEventListener("submit", function (e)) {
     if (pet == "nao") {
         alert("A ONG poderá acompanhar você");
     }
+    if (motivo == "quero" || motivo == "porque sim") {
+        alert("Motivo inválido");
+        return;
+    }
 
+    document.getElementById("resultado").innerHTML =
+        "Formulário enviado com sucesso!<br>" +
+        "Nome: " + nome + "<br>" +
+        "CPF: " + cpf;
 
-}
+});
