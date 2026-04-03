@@ -68,4 +68,11 @@ form.addEventListener("submit", function (e)) {
         alert("Informe se já teve pet");
         return;
     }
+
+      if (horas == "" || isNaN(horas)) {
+        alert("Horas inválidas");
+        return;
+    }
+
+    
 }
