@@ -73,10 +73,14 @@ form.addEventListener("submit", function (e)) {
         alert("Horas inválidas");
         return;
     }
-    
+
     if (motivo.length < 10) {
         alert("Motivo muito curto");
         return;
     }
-
+    
+    if (termo == false) {
+        alert("Aceite o termo");
+        return;
+    }
 }
