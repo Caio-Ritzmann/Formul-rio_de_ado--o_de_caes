@@ -2,7 +2,7 @@ var form = document.getElementById("form");
 
 var cpfs = ["123", "456"]; // exemplo
 
-form.addEventListener("submit", function (e) {
+form.addEventListener("submit", function (e)) {
 
     e.preventDefault();
 
@@ -31,6 +31,16 @@ form.addEventListener("submit", function (e) {
 
     if (telefone.length < 8) {
         alert("Telefone inválido");
+        return;
+    }
+
+     if (cpf == "") {
+        alert("CPF obrigatório");
+        return;
+    }
+
+    if (cpfs.indexOf(cpf) != -1) {
+        alert("CPF já existe");
         return;
     }
 }
